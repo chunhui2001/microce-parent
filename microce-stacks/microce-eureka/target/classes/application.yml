@@ -1,0 +1,24 @@
+server:
+  port: 8753
+  tomcat:
+    basedir: ${java.io.tmpdir}/microce-eureka2_${server.port}/
+    
+tomcat:
+  apr: false
+
+
+spring:
+  profiles:
+    active: 
+  application:
+    name: microce-eureka2
+    
+eureka:
+  client:
+    # 是否把自己作为服务注册到其他服务注册中心
+    registerWithEureka: false
+    # 是否从其他的服务中心同步服务列表
+    fetchRegistry: false
+    # 注册中心地址
+    serviceUrl:
+      defaultZone: http://127.0.0.1:${server.port}/eureka

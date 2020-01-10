@@ -1,0 +1,19 @@
+server:
+  address: 172.28.128.4
+  port: 10000
+  tomcat:
+    basedir: ${java.io.tmpdir}/microce-starter2_${server.port}
+    
+spring:
+  profiles:
+    active: 
+  application:
+    name: microce-starter2
+    
+    
+info:
+  name: "microce-starter2"
+  version: "1.0-SNAPSHOT"
+  pubtime: 121212
+
+

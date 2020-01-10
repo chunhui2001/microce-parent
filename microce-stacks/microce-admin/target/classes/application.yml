@@ -1,0 +1,13 @@
+server:
+  port: 18080
+  tomcat:
+    basedir: ${java.io.tmpdir}/microce-admin2_${server.port}/
+    
+tomcat:
+  apr: false
+
+info:
+  app:
+    name: "microce-admin2"
+    version: "1.0-SNAPSHOT"
+    pubtime: "N/a"

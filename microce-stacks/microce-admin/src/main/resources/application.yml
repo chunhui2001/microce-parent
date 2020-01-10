@@ -1,0 +1,13 @@
+server:
+  port: 18080
+  tomcat:
+    basedir: ${java.io.tmpdir}/@project.name@_${server.port}/
+    
+tomcat:
+  apr: false
+
+info:
+  app:
+    name: "@project.name@"
+    version: "@project.version@"
+    pubtime: "N/a"
